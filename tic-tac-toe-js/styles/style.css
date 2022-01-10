@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    background-color: #FFFDD0;
+}
+
+.main-container{ 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-height:0;
+}
+
+/* wrapper flex */
+.wrapper{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80vh;
+    min-width: 300px;
+}
+
+/* reset button styling */
+#restart{
+    display:inline-block;
+    border-radius: 5px;
+    border : 0;
+    background-color:#FFFDD0;
+    cursor: pointer;
+    border:0.1em solid black;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    padding:0.5em 1.7em;
+    transition: all 0.2s;
+}
+
+#restart:hover{
+    color:#FAFAF8;
+    background-color:#70483C;
+}
+/* player role styling */
+.p-signs{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-signs button{ 
+    display:inline-block;
+    border-radius: 5px;
+    border : 0;
+    background-color:#FFFDD0;
+    cursor: pointer;
+    border:0.1em solid black;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    padding:0.5em 1.7em;
+    transition: all 0.2s;
+}
+
+.p-signs button:hover{ 
+    color:#FAFAF8;
+    background-color:#70483C;
+}
+
+.role.active{ 
+    color:#FAFAF8;
+    background-color:#70483C;
+}
+
+
+
+/* Game area styling */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-buttons{
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    border: 10px solid grey;
+    background-color: grey;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 300px;
+    height: 80vh;
+    width: 80vh;
+
+}
+
+.btn{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid grey;
+    background-color: #FFFDD0;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+    min-height: 100px;
+    font-size: 100px;
+}
+
+.btn:hover{
+    color:#FAFAF8;
+    background-color:#70483C;
+}
+
+
+/* Footer Styling */
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gh-logo{
+    width: 15px;
+    height: 15px;
+}
+
+#gh-link{
+    text-decoration: none;
+    color: black;
+}

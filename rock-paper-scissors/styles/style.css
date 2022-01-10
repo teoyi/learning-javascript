@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(226, 221, 221);
+}
+
+.overhead {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    font-size: 12px;
+}
+
+#instructions {
+    font-size: 15px;
+}
+
+.subcontain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 140px;
+    margin-right: 140px;
+    background: white;
+    border-radius: 14px;
+    margin-top: 0px;
+    
+}
+
+.main {
+    display: flex; 
+    flex-direction: column;
+    background: white;
+    margin-left: 160px;
+    margin-right: 160px;
+    background: white;
+    border-radius: 14px;
+    padding-bottom: 20px;
+}
+#results { 
+    margin-top: 10px;
+    font-size: 25px;
+    
+}
+.user {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.sep {
+    font-size: 80px;
+    margin-top: 82px;
+
+}
+
+.computer {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#pscore{
+    font-size: 80px;
+    margin-top: 0px;
+}
+
+#cscore {
+    font-size: 80px;
+    margin-top: 0px;
+}
+.results {
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+
+.hands {
+    display: inline-block;
+    position: relative;
+    /* bottom: 0; */
+    text-align: center;
+    padding-top: 30px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 90%;
+
+}
+
+button {
+    width: 150px;
+    height: 180px;
+    border: 1;
+    border-radius: 12px;
+    background-color: rgb(253, 253, 253);
+    margin-left: 70px;
+ 
+}
+
+.rock {
+    background-image: url(../images/rock.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.paper {
+    background-image: url(../images/paper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.scissors {
+    background-image: url(../images/scissors.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

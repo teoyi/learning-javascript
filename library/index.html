@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LibArchive</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/form.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img id="logo" src='images/logo.png'>
+                <a id='direct-home' href="index.html"> LibArchive</a> 
+            </div>
+            <ul class='nav-links'>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#">SUMMARY</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <div class="addBook">
+                <button id="add">+ Add Book</button>
+            </div>
+            <div class="sub-container">
+                <div class="bookInfo">
+                    <form class="form-inline" id='form' name="bookInfo" action="">
+                        <div class="inline">
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" placeholder="e.g. 'The Hobbit'" name="title">
+                            <label for="author">Author:</label>
+                            <input type="text" id="author" placeholder="e.g. 'J.R.R Tolkien'" name="author">
+                            <label for="Pages">Pages:</label>
+                            <input type="text" id="pages" placeholder="e.g. '295'" name="pages">
+                        </div>
+                        <div class="inline-2">
+                            <label>
+                                <input type="checkbox" name="status" id='status'> Read
+                            </label>
+                            <input type="submit" value="submit" class="submitBtt">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="table">
+                <table class="table-content">
+                    <tbody>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Status</th>
+                            <th id='del-col'>Action</th>
+                        </tr>
+                    </tbody>
+                    <tbody class="book-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <span class="content left">Made by: <img id="gh-logo" src="images/github-logo.png" alt="github logo"><a id='gh-link' href="https://github.com/teoyi"> YiPeng(Luke) Teo</a></span>
+    </footer>
+    <script src='scripts/script2.js'></script>
+    <script src='scripts/nav.js'></script>
+    <script src='scripts/form.js'></script>
+</html>
